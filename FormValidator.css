@@ -1,0 +1,48 @@
+body {
+  text-align: center;
+}
+fieldset {
+  margin: 0% 30%;
+  border: 3px solid #e22121;
+  padding: 0 20px 20px;
+}
+legend {
+  color: red;
+  display: block;
+
+  /**/
+  margin-left: -140px;
+}
+.input {
+  background-color: #fff3f3;
+  box-shadow: 2px 2px 1px;
+  border-radius: 5px;
+  border: 2px solid #f6cbcb;
+}
+.label {
+  width: 200px;
+  display: inline-block;
+  padding: 5px;
+  text-align: right;
+}
+.gender {
+  width: 10px;
+}
+#label {
+  margin-left: -9px;
+}
+#male {
+  text-align: right;
+}
+.invalid {
+  border: 2px solid red;
+}
+.valid {
+  border: 2px solid green;
+}
+.erreur {
+  margin-left: 33%;
+  margin-top: -2%;
+  font-size: small;
+  color: red;
+}

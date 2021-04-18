@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+  <head lang="fr">
+    <title>TP5</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="TP5.css" />
+  </head>
+  <body>
+    <h1>Formule d'inscription</h1>
+
+    <div id="container">
+      <form id="form" action="traiter.php" method="POST">
+        <fieldset>
+          <legend>Vos données personnelles</legend>
+
+          <p>
+            <label for="nom" class="label">Nom*</label
+            ><input
+              placeholder="Votre nom"
+              type="text"
+              name="nom"
+              id="nom"
+              class="input"
+            />
+          </p>
+          <div id="erreur_nom" class="erreur"></div>
+          <p>
+            <label for="prenom" class="label">Prénom*</label
+            ><input
+              placeholder="Votre prenom"
+              type="text"
+              name="prenom"
+              id="prenom"
+              class="input"
+            />
+          </p>
+          <div id="erreur_prenom" class="erreur"></div>
+          <p>
+            <label for="pseudo" class="label">Pseudo*</label
+            ><input
+              placeholder="Votre Pseudo"
+              type="text"
+              name="pseudo"
+              id="pseudo"
+              class="input"
+            />
+          </p>
+          <div id="erreur_pseudo" class="erreur"></div>
+          <p>
+            <label for="profession" class="label">Profession</label
+            ><input
+              placeholder="Votre Proffesion"
+              type="text"
+              name="profession"
+              id="proffesion"
+              class="input"
+            />
+          </p>
+          <div id="erreur_proffesion" class="erreur"></div>
+          <p>
+            <label for="email" class="label">Adresse Email*</label
+            ><input
+              placeholder="Votre Email"
+              type="email"
+              name="email"
+              id="email"
+              class="input"
+            />
+          </p>
+          <div id="erreur_email" class="erreur"></div>
+          <p>
+            <label for="code" class="label">Mot De Passe*</label
+            ><input
+              placeholder="Votre mdp"
+              type="password"
+              name="code"
+              id="code"
+              class="input"
+            />
+          </p>
+          <div id="erreur_code" class="erreur"></div>
+          <p>
+            <label for="code1" class="label">Mot de passe (confirmation)*</label
+            ><input
+              placeholder="Entrer a nouveau Votre mdp"
+              type="password"
+              name="code1"
+              id="code1"
+              class="input"
+            />
+          </p>
+          <div id="erreur_code1" class="erreur"></div>
+          <p>
+            <label class="formLabel" for="day" id="date" class="label"
+              >Date de naissance*:</label
+            >
+            <select name="birthday_day" id="day" title="Jour" class="input">
+              <option value="0" selected="selected">Jour</option>
+            </select>
+            <select name="birthday_month" id="month" title="Mois" class="input">
+              <option value="0" selected="selected">Mois</option>
+            </select>
+            <select name="birthday_year" id="year" title="Annee" class="input">
+              <option value="0" selected="selected">Annee</option>
+            </select>
+          </p>
+          <div id="erreur_day" class="erreur"></div>
+          <div id="erreur_month" class="erreur"></div>
+          <div id="erreur_year" class="erreur"></div>
+          <div id="radio_butt">
+            <p>
+              <span class="formLabel">Sexe *:</span>
+
+              <input type="radio" id="male" name="sexe" value="huey" checked />
+              <label for="male">Homme</label>
+              <input type="radio" id="female" name="sexe" value="dewey" />
+              <label for="female">Femme </label>
+            </p>
+            <div id="erreur_sexe" class="erreur"></div>
+          </div>
+          <p>
+            <span class="formLabel"></span>
+            <input type="submit" value="M'inscrire" class="input" id="submit" />
+            <input type="reset" value="Rèinitialiser" class="input" />
+          </p>
+        </fieldset>
+      </form>
+    </div>
+    <script type="text/javascript" src="TP5.js"></script>
+    <!--   <script type="text/javascript" src="TP5Me.js"></script>-->
+  </body>
+</html>
